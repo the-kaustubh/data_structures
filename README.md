@@ -1,6 +1,6 @@
 # Data Structures
 
-** TODO **
+**TODO**
 - [x] Implement Linked lists
   - [x] Insert
   - [ ] Delete
