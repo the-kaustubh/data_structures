@@ -14,3 +14,7 @@
 - [ ] Trees
 
 - [ ] Graphs
+
+- [ ] Heap
+
+- [ ]   
