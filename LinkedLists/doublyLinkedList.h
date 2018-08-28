@@ -16,7 +16,7 @@ Node insertAtStartDLL(Node start, int data);
 
 Node insertAtEndDLL(Node start, int data);
 
-Node insertAtPositionCDLL(Node start, int data, int pos);
+Node insertAtPositionDLL(Node start, int data, int pos);
 
 Node deleteKeyDLL(Node start, int key);
 

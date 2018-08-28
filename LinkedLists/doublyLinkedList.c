@@ -8,7 +8,7 @@ typedef struct node {
 }*Node;
 long unsigned int DLL_BLOCK_SIZE = sizeof(Node);
 
-Node insertAtStart(Node start, int data) {
+Node insertAtStartDLL(Node start, int data) {
   Node new = malloc(DLL_BLOCK_SIZE);
   new->data = data;
     new->next   = start;
@@ -16,7 +16,7 @@ Node insertAtStart(Node start, int data) {
   return start  = new;
 }
 
-Node insertAtEnd(Node start, int data) {
+Node insertAtEndDLL(Node start, int data) {
   Node new = malloc(DLL_BLOCK_SIZE), temp = start;
   new->data = data;
   new->next = NULL;
@@ -26,7 +26,7 @@ Node insertAtEnd(Node start, int data) {
   return start;
 }
 
-Node insertAtPosition(Node start, int data, int pos) {
+Node insertAtPositionDLL(Node start, int data, int pos) {
   Node new = malloc(DLL_BLOCK_SIZE), temp1 = start, temp2;
   new->data = data;
   for(int i = 1; i < pos; i++) temp1 = temp1->next;
@@ -62,7 +62,7 @@ Node deletePositionDLL(Node start, int pos) {
   /*
     delete a Node from Given position.
   */
-  Node new = malloc(DLL_BLOCK_SIZE), temp1 = start, temp2;
+  Node temp1 = start, temp2;
   for(int i = 1; i < pos; i++) temp1 = temp1->next;
   temp2 = temp1->next->next;
   free(temp1->next);
@@ -70,3 +70,5 @@ Node deletePositionDLL(Node start, int pos) {
   temp2->prev = temp1;
   return start;
 }
+
+void main() {}

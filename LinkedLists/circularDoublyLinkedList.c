@@ -56,7 +56,7 @@ Node deletePositionDLL(Node start, int pos) {
   /*
     delete a Node from Given position.
   */
-  Node new = malloc(DLL_BLOCK_SIZE), temp1 = start, temp2;
+  Node temp1 = start, temp2;
   for(int i = 1; i < pos; i++) temp1 = temp1->next;
   temp2 = temp1->next->next;
   free(temp1->next);
@@ -64,3 +64,5 @@ Node deletePositionDLL(Node start, int pos) {
   temp2->prev = temp1;
   return start;
 }
+
+void main() {}

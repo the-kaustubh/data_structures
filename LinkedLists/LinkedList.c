@@ -31,7 +31,7 @@ Node insertNodeAtPositionLL(Node start, int data, int pos) {
   return start;
 }
 
-Node deleteKeyDLL(Node start, int key) {
+Node deleteKeyLL(Node start, int key) {
   /*(
     delete a `Node` having data as `key`
       if key is in next Node, then free the next Node
@@ -49,14 +49,18 @@ Node deleteKeyDLL(Node start, int key) {
   }
 }
 
-Node deletePositionDLL(Node start, int pos) {
+Node deletePositionLL(Node start, int pos) {
   /*
     delete a Node from Given position.
   */
-  Node new = malloc(DLL_BLOCK_SIZE), temp1 = start, temp2;
+  Node temp1 = start, temp2;
   for(int i = 1; i < pos; i++) temp1 = temp1->next;
   temp2 = temp1->next->next;
   free(temp1->next);
   temp1->next = temp2;
   return start;
+}
+
+void main(/* arguments */) {
+  /* code */
 }
