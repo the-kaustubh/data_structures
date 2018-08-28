@@ -60,7 +60,3 @@ Node deletePositionLL(Node start, int pos) {
   temp1->next = temp2;
   return start;
 }
-
-void main(/* arguments */) {
-  /* code */
-}

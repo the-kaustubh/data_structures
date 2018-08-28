@@ -70,5 +70,3 @@ Node deletePositionDLL(Node start, int pos) {
   temp2->prev = temp1;
   return start;
 }
-
-void main() {}
