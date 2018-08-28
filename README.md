@@ -4,7 +4,7 @@
 
 - [x] Implement Linked lists
   - [x] Insert
-  - [ ] Delete
+  - [x] Delete
   - [ ] Sort
   - [ ] Reverse
 
@@ -15,6 +15,4 @@
 - [ ] Trees
 
 - [ ] Graphs
-
-- [ ] Heap
 

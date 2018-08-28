@@ -10,10 +10,18 @@ typedef struct node {
   struct node * next;
   struct node * prev;
 }*Node;
-long unsigned int block = sizeof(Node);
+long unsigned int DLL_BLOCK_SIZE = sizeof(Node);
 
-Node insertAtStartCDLL(Node start, int data);
+Node insertAtStartDLL(Node start, int data);
 
-Node insertAtEndCDLL(Node start, int data);
+Node insertAtEndDLL(Node start, int data);
 
-Node insertAtPositionCDLL(Node start, int data, int pos);
+Node insertAtPositionDLL(Node start, int data, int pos);
+
+Node deleteKeyDLL(Node start, int key);
+
+Node deletePositionDLL(Node start, int pos);
+
+Node sortDLL(Node start);
+
+Node reverseDLL(Node start);
