@@ -59,3 +59,4 @@ Node deletePositionDLL(Node start, int pos) {
   free(temp1->next);
   temp1->next = temp2;
   return start;
+}
