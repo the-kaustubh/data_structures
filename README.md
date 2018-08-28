@@ -3,7 +3,7 @@
 **TODO**
 - [x] Implement Linked lists
   - [x] Insert
-  - [ ] Delete
+  - [x] Delete
   - [ ] Sort
   - [ ] Reverse
 
@@ -15,4 +15,4 @@
 
 - [ ] Graphs
 
-- [ ] Heap 
+- [ ] Heap
