@@ -15,6 +15,4 @@
 
 - [ ] Graphs
 
-- [ ] Heap
-
-- [ ]   
+- [ ] Heap 
