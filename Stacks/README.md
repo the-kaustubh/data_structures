@@ -3,12 +3,12 @@
 *Usage*
 
 - Creating a Stack
-  ```
+  ```C
    Stack createStack(int size);
 
-    Creates a stack of given size.
+    > Creates and Returns a stack of given size.
 
-   `size` : integer : size of the Stacks
+   size : integer : size of the Stacks
 
   ```
 
@@ -16,9 +16,9 @@
    ```C
    int stPush(Stack s, int value);
 
-    Pushes a value onto the stack.
+    > Pushes a value onto the stack.
 
-   s     : Stack : The _stack_ to which the value has to be pushed
+   s     : Stack : The stack to which the value has to be pushed
    value : int   : the value to be pushed
    ```
 
@@ -26,16 +26,16 @@
     ```C
     int stPop(Stack s);
 
-      Pops the top value from stack and _returns_ the popped value.
+      > Pops the top value from stack and _returns_ the popped value.
 
-    s     : Stack : The _stack_ to which the value has to be pushed
+    s     : Stack : The stack to which the value has to be pushed
     ```
 - The `Peek` function
-  ``` C
+  ```C
    int stPeek(Stack s);
 
-    Return the top value without popping it.
+    > Returns the top value without popping it.
 
-   s     : Stack : The _stack_ to which the value has to be pushed
+   s     : Stack : The stack to which the value has to be pushed
 
   ```
