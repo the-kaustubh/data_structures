@@ -13,7 +13,7 @@
   ```
 
 - The `Push` function
-   ```
+   ```C
    int stPush(Stack s, int value);
 
     Pushes a value onto the stack.
@@ -23,7 +23,7 @@
    ```
 
  - The `Pop` function
-    ```
+    ```C
     int stPop(Stack s);
 
       Pops the top value from stack and _returns_ the popped value.
@@ -31,7 +31,7 @@
     s     : Stack : The _stack_ to which the value has to be pushed
     ```
 - The `Peek` function
-  ```
+  ``` C
    int stPeek(Stack s);
 
     Return the top value without popping it.
