@@ -8,11 +8,13 @@
   - [ ] Sort
   - [ ] Reverse
 
-- [ ] Queue
+- [ ] Stack
+  - [x] Push
+  - [x] Pop
+  - [x] Peek
 
 - [ ] Stack
 
 - [ ] Trees
 
 - [ ] Graphs
-
