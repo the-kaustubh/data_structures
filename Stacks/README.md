@@ -16,6 +16,10 @@
    ```C
    int stPush(Stack s, int value);
 
+    > Pushes a value onto the stack.
+
+   s     : Stack : The stack to which the value has to be pushed
+   value : int   : the value to be pushed
    ```
     > Pushes a value onto the stack.
 
@@ -26,6 +30,12 @@
     ```C
     int stPop(Stack s);
 
+<<<<<<< HEAD
+=======
+      > Pops the top value from stack and _returns_ the popped value.
+
+    s     : Stack : The stack to which the value has to be pushed
+>>>>>>> add88a233bc41892a25a8f45dbaca62566aa6d09
     ```
       > Pops the top value from stack and _returns_ the popped value.
 
@@ -35,7 +45,13 @@
   ```C
    int stPeek(Stack s);
 
+<<<<<<< HEAD
    ```
     > Returns the top value without popping it.
+=======
+    > Returns the top value without popping it.
+
+   s     : Stack : The stack to which the value has to be pushed
+>>>>>>> add88a233bc41892a25a8f45dbaca62566aa6d09
 
    - s     : Stack : The stack to which the value has to be pushed
