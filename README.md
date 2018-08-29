@@ -13,7 +13,7 @@
   - [x] Pop
   - [x] Peek
 
-- [ ] Stack
+- [ ] Queues
 
 - [ ] Trees
 
