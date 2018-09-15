@@ -13,7 +13,10 @@
   - [x] Pop
   - [x] Peek
 
-- [ ] Queues
+- [x] Queues
+  - [x] EnQueue
+  - [x] DeQueue
+  - [x] Display
 
 - [ ] Trees
 
