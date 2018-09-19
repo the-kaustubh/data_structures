@@ -1,24 +1,20 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include "DoublyLinkedList.h"
 
-typedef struct node {
-  int data;
-  struct node * next;
-  struct node * prev;
-}*Node;
-long unsigned int DLL_BLOCK_SIZE = sizeof(Node);
+Node createNodeDLL(int data) {
+  Node retNode = malloc(DLL_BLOCK_SIZE);
+  retNode->data = data;
+  return retNode;
+}
 
 Node insertAtStartDLL(Node start, int data) {
-  Node new = malloc(DLL_BLOCK_SIZE);
-  new->data = data;
+  Node new = createNodeDLL(data);
     new->next   = start;
   start->prev   =   new;
   return start  = new;
 }
 
 Node insertAtEndDLL(Node start, int data) {
-  Node new = malloc(DLL_BLOCK_SIZE), temp = start;
-  new->data = data;
+  Node new = createNodeDLL(data), temp = start;
   new->next = NULL;
   while(temp->next != NULL) temp = temp->next;
   temp->next = new;
@@ -27,7 +23,7 @@ Node insertAtEndDLL(Node start, int data) {
 }
 
 Node insertAtPositionDLL(Node start, int data, int pos) {
-  Node new = malloc(DLL_BLOCK_SIZE), temp1 = start, temp2;
+  Node new = createNodeDLL(data), temp1 = start, temp2;
   new->data = data;
   for(int i = 1; i < pos; i++) temp1 = temp1->next;
   temp2 = temp1->next;

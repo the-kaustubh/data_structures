@@ -1,8 +1,14 @@
 #include "circularDoublyLinkedList.h"
 
+
+Node createNodeCDLL(int data) {
+  Node retNode = malloc(CDLL_BLOCK_SIZE);
+  retNode->data = data;
+  return retNode;
+}
+
 Node insertAtStart(Node start, int data) {
-  Node new = malloc(CDLL_BLOCK_SIZE), last = start->prev;
-  new->data = data;
+  Node new = createNodeCDLL(data), last = start->prev;
    last->next =   new;
     new->prev =  last;
     new->next = start;
@@ -11,8 +17,7 @@ Node insertAtStart(Node start, int data) {
 }
 
 Node insertAtEnd(Node start, int data) {
-  Node new = malloc(CDLL_BLOCK_SIZE), last = start->prev;
-  new->data = data;
+  Node new = createNodeCDLL(data), last = start->prev;
   last->next = new;
   new->prev = last;
   new->next = start;
@@ -21,8 +26,7 @@ Node insertAtEnd(Node start, int data) {
 }
 
 Node insertAtPosition(Node start, int data, int pos) {
-  Node new = malloc(CDLL_BLOCK_SIZE), temp1 = start, temp2;
-  new->data = data;
+  Node new = createNodeCDLL(data), temp1 = start, temp2;
   for(int i = 1; i < pos; i++) temp1 = temp1->next;
   temp2 = temp1->next;
   temp1->next = new;

@@ -13,6 +13,8 @@ typedef struct node {
 } *Node;
 const long unsigned int CDLL_BLOCK_SIZE = sizeof(Node);
 
+Node createNodeCDLL(int data);
+
 Node insertAtStartCDLL(Node start, int data);
 
 Node insertAtEndCDLL(Node start, int data);

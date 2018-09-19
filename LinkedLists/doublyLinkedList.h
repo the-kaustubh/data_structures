@@ -2,6 +2,8 @@
 
 #ifndef __STDIO_H
   #include <stdio.h>
+#endif
+#ifndef __STDLIB_H
   #include <stdlib.h>
 #endif
 
@@ -10,7 +12,10 @@ typedef struct node {
   struct node * next;
   struct node * prev;
 }*Node;
-long unsigned int DLL_BLOCK_SIZE = sizeof(Node);
+
+long unsigned int DLL_BLOCK_SIZE = sizeof(struct node);
+
+Node createNodeDLL(int data);
 
 Node insertAtStartDLL(Node start, int data);
 

@@ -10,7 +10,7 @@ typedef struct node {
   struct node * next;
 }* Node;
 
-const long unsigned int LL_BLOCK_SIZE = sizeof(Node);
+const long unsigned int LL_BLOCK_SIZE = sizeof(struct node);
 
 Node createNodeLL(int data);
 
