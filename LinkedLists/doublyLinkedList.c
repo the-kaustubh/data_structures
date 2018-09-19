@@ -24,7 +24,6 @@ Node insertAtEndDLL(Node start, int data) {
 
 Node insertAtPositionDLL(Node start, int data, int pos) {
   Node new = createNodeDLL(data), temp1 = start, temp2;
-  new->data = data;
   for(int i = 1; i < pos; i++) temp1 = temp1->next;
   temp2 = temp1->next;
   temp1->next = new;

@@ -1,6 +1,5 @@
 #include "circularDoublyLinkedList.h"
 
-
 Node createNodeCDLL(int data) {
   Node retNode = malloc(CDLL_BLOCK_SIZE);
   retNode->data = data;
