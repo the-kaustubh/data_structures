@@ -7,23 +7,20 @@ Node createNodeLL(int data) {
 }
 
 Node insertNodeAtStartLL(Node start, int data) {
-  Node newStart = malloc(LL_BLOCK_SIZE);
-  newStart->data = data;
+  Node newStart = createNodeLL(data);
   newStart->next = start;
   start = newStart;
   return newStart;
 }
 Node insertNodeAtEndLL(Node start, int data) {
-  Node temp = start, new = malloc(LL_BLOCK_SIZE);
-  new->data = data;
+  Node temp = start, new = createNodeLL(data);
   while(temp->next != NULL) temp = temp->next;
   temp->next = new;
   new->next  = NULL;
   return start;
 }
 Node insertNodeAtPositionLL(Node start, int data, int pos) {
-  Node new = malloc(LL_BLOCK_SIZE), temp1 = start, temp2;
-  new->data = data;
+  Node new = createNodeLL(data), temp1 = start, temp2;
   for(int i = 1; i < pos; i++) temp1 = temp1->next;
   temp2 = temp1->next;
   temp1->next = new;
