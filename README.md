@@ -17,6 +17,7 @@
   - [x] EnQueue
   - [x] DeQueue
   - [x] Display
+  - [x] isEmpty
 
 - [ ] Trees
 
