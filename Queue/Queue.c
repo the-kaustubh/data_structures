@@ -46,3 +46,7 @@ void displayQueue(Queue q) {
   }
   printf("\n)\n");
 }
+
+int isEmpty(Queue q) {
+ return (-1 == q->rear);
+}

@@ -66,6 +66,13 @@
  void displayQueue(Queue q);
 
 /*
+ * Returns true `1` if empty
+ * false `0` if not
+ *
+ */
+int isEmpty(Queue q);
+
+/*
  * internally used to adjust the Queue
  */
  static void __adjust__(int * arr, int end);
