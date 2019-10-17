@@ -19,8 +19,8 @@
   - [x] Display
   - [x] isEmpty
 
-- [ ] Graphs
-  - [ ] DFS
-  - [ ] BFS
+- [x] Graphs
+  - [x] DFS
+  - [x] BFS
 
 - [ ] Trees
