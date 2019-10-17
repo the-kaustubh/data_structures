@@ -73,18 +73,6 @@ void depthFirstSearch(struct adjMat *am, int rootNode) {
  return;
 }
 
-/*
-void BFSRow(struct adjMat *am, int rootNode, int *visited) {
- int dim = am->dimension;
-
- visited[rootNode] = 1;
- printf("Visited %c\n", mapNumToLetter(rootNode));
- for(int i = 0; i < dim; i++) {
-  if( 1 == am->adjacencyMatrix[rootNode][i] && 1 != visited[i] ) 
-   DFSRow(am, i, visited);
- }
-}
-*/
 void breadthFirstSearch(struct adjMat *am, int rootNode) {
  int dim = am->dimension;
  int *visited = (int *) malloc( sizeof(int) * dim);
