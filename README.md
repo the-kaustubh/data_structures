@@ -23,4 +23,5 @@
   - [x] DFS
   - [x] BFS
 
-- [ ] Trees
+- [x] Trees
+  - [x] Binary Search Tree
