@@ -1,4 +1,6 @@
 #include "stack.h"
+#include<stdio.h>
+#include<stdlib.h>
 
 Stack createStack(int size) {
   Stack newStack = malloc(sizeof(struct stack));
@@ -10,14 +12,22 @@ Stack createStack(int size) {
 
 int stPop(Stack s) {
   int retVal;
-  if(s->top == -1 || s->top == s->size-1) return NULL;
+  if(isEmpty(s)) return -0;
   retVal = s->data[s->top];
   s->top -= 1;
   return retVal;
 }
 
+int isEmpty(Stack s) {
+ return (s->top == -1);
+}
+
+int isFull(Stack s) {
+ return (s->top == s->size-1);
+}
+
 int stPush(Stack s, int value) {
-  if(s->top == s->size-1) return 0;
+  if(isFull(s)) return 0;
   s->top ++;
   s->data[s->top] = value;
   return 1;
@@ -33,4 +43,8 @@ void displayStack(Stack s) {
     printf("%d ", s->data[i]);
   }
   printf("\n)\n" );
+}
+void destroyStack(Stack s) {
+ free(s->data);
+ free(s);
 }
