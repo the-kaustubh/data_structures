@@ -35,6 +35,15 @@
  */
  Queue createQueue(int size);
 
+/* 
+ * Frees the memory alloc'd
+ * by `createQueue`
+ * should be called after everytime a
+ * queue is created and done being used
+ * no. of createQueue calls = no. of freeQueue calls
+ */
+ void freeQueue(Queue q);
+
 /*
  * Removes the first data in line
  * and returns it

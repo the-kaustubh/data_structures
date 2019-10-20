@@ -13,6 +13,11 @@ Queue createQueue(int size) {
   return Q;
 }
 
+void freeQueue(Queue q) {
+ free(q->data);
+ free(q);
+}
+
 static void __adjust__(int * arr, int end) {
   for(int i = 0; i < end; i++) {
     arr[i  ] = arr[i+1];
