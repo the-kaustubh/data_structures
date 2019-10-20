@@ -25,3 +25,6 @@
 
 - [x] Trees
   - [x] Binary Search Tree
+
+- [ ] Hash Tables
+
