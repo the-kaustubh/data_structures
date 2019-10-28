@@ -43,6 +43,21 @@ void inOrder(struct node *root) {
  printf(" [ %d ] ", root->data);
  inOrder(root->right);
 }
+
+void preOrder(struct node *root) {
+ if(root ==  NULL) return;
+ printf(" [ %d ] ", root->data);
+ preOrder(root->left);
+ preOrder(root->right);
+}
+
+void postOrder(struct node *root) {
+ if(root ==  NULL) return;
+ postOrder(root->left);
+ postOrder(root->right);
+ printf(" [ %d ] ", root->data);
+}
+
 void clearTree(struct node *Node) {
  if(Node == NULL) return;
  clearTree(Node->left);
