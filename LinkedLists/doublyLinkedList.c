@@ -1,4 +1,4 @@
-#include "DoublyLinkedList.h"
+#include "doublyLinkedList.h"
 
 Node createNodeDLL(int data) {
   Node retNode = malloc(DLL_BLOCK_SIZE);

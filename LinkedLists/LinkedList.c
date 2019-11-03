@@ -57,3 +57,12 @@ Node deletePositionLL(Node start, int pos) {
   temp1->next = temp2;
   return start;
 }
+
+void freeLL(Node n) {
+ Node f;
+ while(n != NULL) {
+  f = n;
+  n = n->next;
+  free(f);
+ }
+}

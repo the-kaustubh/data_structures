@@ -7,12 +7,14 @@
   #include <stdlib.h>// The `malloc` function
 #endif
 
+#ifndef __LL_H
+#define __LL_H
 typedef struct node {
   int data;
   struct node * next;
 }* Node;
 
-const long unsigned int LL_BLOCK_SIZE = sizeof(struct node);
+#define LL_BLOCK_SIZE sizeof(struct node)
 
 Node createNodeLL(int data);
 
@@ -29,3 +31,7 @@ Node deletePositionLL(Node start, int pos);
 Node sortLL(Node start);
 
 Node reverseLL(Node start);
+
+void freeLL(Node n);
+
+#endif
