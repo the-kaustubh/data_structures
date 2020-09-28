@@ -4,7 +4,7 @@
 #include "BinarySearchTree.h"
 
 struct node * createNode(int data) {
- struct node * Node = (struct node *) malloc(NODE_SIZE);
+struct node * Node = (struct node *) malloc(NODE_SIZE);
 
  Node->data = data;
  Node->left = NULL;
