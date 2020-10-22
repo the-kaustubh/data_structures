@@ -22,6 +22,8 @@
 - [x] Graphs
   - [x] DFS
   - [x] BFS
+  - [ ] Dijkstra
+  - [ ] Search
 
 - [x] Trees
   - [x] Binary Search Tree
