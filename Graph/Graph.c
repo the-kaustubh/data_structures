@@ -7,7 +7,7 @@
    for input and perform
    search operations:
    [x] DFS
-   [ ] BFS
+   [x] BFS
    [ ] Dijkstra
    [ ] Bellman-Ford
 */
